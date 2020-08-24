@@ -10,7 +10,7 @@ export class HotelPackagesService implements Resolve<any> {
   routeParams: any;
 //   onResultChanged: BehaviorSubject<PageableResponse<FitmentRequest>> = new BehaviorSubject(new PageableResponse());
 
-  _apiUrl: string = 'http://localhost:3000';
+  _apiUrl: string = 'http://47.254.234.129:3000';
   appendedData: any;
 
   /**
