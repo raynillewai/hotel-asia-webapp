@@ -1,27 +1,27 @@
-# HotelAsia
+HotelAsia - User Documentation 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+The hotel packages web application can be accessed via the URL below: 
 
-## Development server
+URL : 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ 
 
-## Code scaffolding
+This web application has the features below for users: 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-Display hotel packages : To show the relevant hotel packages 
 
-## Build
+-Create hotel packages : To create new hotel packages  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+-Update hotel packages : To update details of the hotel packages 
 
-## Running unit tests
+-Delete hotel packages : To remove hotel packages which are no longer relevant 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ 
 
-## Running end-to-end tests
+The technology/framework stacks being utilized for this development are as follows: 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Docker : Official Website and REST API hosting 
 
-## Further help
+- Angular : Front-End Development 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Nest JS : Back-End Development 
