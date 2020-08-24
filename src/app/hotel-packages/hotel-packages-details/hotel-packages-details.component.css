@@ -1,0 +1,13 @@
+input, textarea, select {
+    margin-bottom: 15px;
+}
+
+.save-btn {
+    margin-top: 3rem;
+}
+
+.divider {
+    width: 10px;
+    height: auto;
+    display: inline-block;
+}

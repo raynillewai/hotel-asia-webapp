@@ -1,0 +1,247 @@
+<app-header></app-header>
+<div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(../../assets/hero_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center">
+
+      <div class="col-md-10" data-aos="fade-up" data-aos-delay="400">
+        
+        
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1>Listings</h1>
+            <p class="mb-0">We Make You Better!</p>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+
+        <div class="d-block d-md-flex listing-horizontal" *ngFor="let hotelPackage of hotelPackagesList">
+
+          <a href="#" class="img d-block" style="background-image: url('https://via.placeholder.com/230x188.png')">
+            <span class="category">BEST DEAL</span>
+          </a>
+
+          <div class="lh-content">
+            <a (click)="gotoDetails(hotelPackage)" class="bookmark"><span class="icon-heart"><i class="fa fa-eye" aria-hidden="true"></i></span></a>
+            <h3><a (click)="gotoDetails(hotelPackage)">{{hotelPackage.hotelName}}</a></h3>
+            <p>{{hotelPackage.description}}</p>
+            <p>
+              <!-- <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-secondary"></span> -->
+              <span>{{hotelPackage.price}}</span>
+            </p>
+
+            
+          </div>
+
+        </div>
+
+        <!-- <div class="d-block d-md-flex listing-horizontal">
+
+          <a href="#" class="img d-block" style="background-image: url('images/img_1.jpg')">
+            <span class="category">Stores</span>
+          </a>
+
+          <div class="lh-content">
+            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+            <h3><a href="#">Handcrafted Products</a></h3>
+            <p>Don St, Brooklyn, New York</p>
+            <p>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-secondary"></span>
+              <span>(3 Reviews)</span>
+            </p>
+
+            
+          </div>
+
+        </div>
+
+        <div class="d-block d-md-flex listing-horizontal">
+
+          <a href="#" class="img d-block" style="background-image: url('images/img_3.jpg')">
+            <span class="category">Events</span>
+          </a>
+
+          <div class="lh-content">
+            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
+            <h3><a href="#">Live Band</a></h3>
+            <p>Don St, Brooklyn, New York</p>
+            <p>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-warning"></span>
+              <span class="icon-star text-secondary"></span>
+              <span>(3 Reviews)</span>
+            </p>
+
+            
+          </div>
+
+        </div> -->
+
+        <div class="col-12 mt-5 text-center">
+          <div class="custom-pagination">
+            <span>1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span class="more-page">...</span>
+            <a href="#">10</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3 ml-auto">
+
+        <div class="mb-5">
+          <h3 class="h5 text-black mb-3">Filters</h3>
+          <form action="#" method="post">
+            <div class="form-group">
+              <input type="text" placeholder="What are you looking for?" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="select-wrap">
+                  <span class="icon"><span class="icon-keyboard_arrow_down"></span></span>
+                  <select class="form-control" name="" id="">
+                    <option value="">All Categories</option>
+                    <option value="">Appartment</option>
+                    <option value="">Restaurant</option>
+                    <option value="">Eat &amp; Drink</option>
+                    <option value="">Events</option>
+                    <option value="">Fitness</option>
+                    <option value="">Others</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group">
+              <!-- select-wrap, .wrap-icon -->
+              <div class="wrap-icon">
+                <span class="icon icon-room"></span>
+                <input type="text" placeholder="Location" class="form-control">
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div class="mb-5">
+          <form action="#" method="post">
+            <div class="form-group">
+              <p>Radius around selected destination</p>
+            </div>
+            <div class="form-group">
+              <input type="range" min="0" max="100" value="20" data-rangeslider>
+            </div>
+          </form>
+        </div>
+
+        <div class="mb-5">
+          <form action="#" method="post">
+            <div class="form-group">
+              <p>Category 'Restaurant' is selected</p>
+              <p>More filters</p>
+            </div>
+            <div class="form-group">
+              <ul class="list-unstyled">
+                <li>
+                  <label for="option1">
+                    <input type="checkbox" id="option1">
+                    Coffee
+                  </label>
+                </li>
+                <li>
+                  <label for="option2">
+                    <input type="checkbox" id="option2">
+                    Vegetarian
+                  </label>
+                </li>
+                <li>
+                  <label for="option3">
+                    <input type="checkbox" id="option3">
+                    Vegan Foods
+                  </label>
+                </li>
+                <li>
+                  <label for="option4">
+                    <input type="checkbox" id="option4">
+                    Sea Foods
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
+<a (click)="ngxSmartModalService.getModal('myModal').open()" class="float btn-primary">
+  <i class="fa fa-plus my-float"></i>
+</a>
+
+<ngx-smart-modal #myModal identifier="myModal">
+  <h2>Create Listing</h2>
+  <p>*Please fill in all relevant information</p>
+
+  <div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div data-form-type="formoid">
+                    <form class="block mbr-form" [formGroup]="hotelDetailsForm" (submit)="createForm()">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input formControlName="hotelName" type="text" class="form-control input naming" placeholder="Hotel Name" required="" id="email-form4-2y">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea [(ngModel)]="description" [ngModelOptions]="{standalone: true}" class="form-control input" rows="3" placeholder="Description" style="resize:none" id="message-form4-2y"></textarea>
+                            </div>
+                            <div class="col-md-6 multi-horizontal">
+                                <select class="custom-select form-control input" [(ngModel)]="selectedDuration" [ngModelOptions]="{standalone: true}">
+                                    <option value="" disabled>Duration</option>
+                                    <option *ngFor="let number of genNumbers" [value]="number">{{number}} days {{number-1}} night(s)</option>
+                                 </select>
+                                <!-- <input type="text" class="form-control input" name="phone" data-form-field="Phone" placeholder="Phone" required="" id="phone-form4-2y"> -->
+                            </div>
+                            <div class="col-md-6 multi-horizontal">
+                                <select class="custom-select form-control input" [(ngModel)]="selectedPackageValidity" [ngModelOptions]="{standalone: true}">
+                                    <option value="" disabled>Validity</option>
+                                    <option *ngFor="let validity of genValidity" [value]="validity">{{validity}} day(s)</option>
+                                 </select>
+                                <!-- <input type="text" class="form-control input" name="phone" data-form-field="Phone" placeholder="Phone" required="" id="phone-form4-2y"> -->
+                            </div>
+                            <div class="col-md-12">
+                                <input formControlName="price" type="number" step="0.01" class="form-control input" name="price" placeholder="Price" required="" id="email-form4-2y">
+                            </div>
+                            <div class="input-group-btn col-md-12 save-btn">
+                                <button class="btn btn-primary rounded px-4 py-3" type="submit">Save</button>
+                                <div class="divider"></div>
+                                <button class="btn btn-primary rounded px-4 py-3" (click)="myModal.close()">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</ngx-smart-modal>
