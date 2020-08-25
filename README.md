@@ -2,26 +2,30 @@ HotelAsia - User Documentation
 
 The hotel packages web application can be accessed via the URL below: 
 
-URL : 
+URL : http://hotel-asia.herokuapp.com/
 
  
 
 This web application has the features below for users: 
 
--Display hotel packages : To show the relevant hotel packages 
+- Display hotel packages listing: To show the relevant hotel packages 
 
--Create hotel packages : To create new hotel packages  
+- Display hotel packages details: To show the relevant hotel packages in detail
 
--Update hotel packages : To update details of the hotel packages 
+- Create hotel packages : To create new hotel packages  
 
--Delete hotel packages : To remove hotel packages which are no longer relevant 
+- Update hotel packages : To update details of the hotel packages 
+
+- Delete hotel packages : To remove hotel packages 
 
  
 
-The technology/framework stacks being utilized for this development are as follows: 
+The stacks being utilized for this development are as follows: 
 
-- Docker : Official Website and REST API hosting 
+- Docker : To deploy the restful APIs source to Aliyun ECS 
+
+- Heroku : To deploy, host the webapp
 
 - Angular : Front-End Development 
 
-- Nest JS : Back-End Development 
+- NestJS : Back-End Development 
